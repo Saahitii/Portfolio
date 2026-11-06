@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#10121b">
+<title>Saahiti Hota — Social Media & YouTube Growth</title>
+<meta name="description" content="Social media and short-form video growth portfolio by Saahiti Hota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#10121b;--surface:#181b28;--surface-2:#1e2232;--ink:#f4f3fb;
+  --muted:#a6a8bb;--line:rgba(255,255,255,.10);--pink:#ff4fa3;
+  --violet:#9b8cff;--cyan:#63d9e8;--soft:rgba(155,140,255,.13);
+  --radius:22px;--max:1100px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:28px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "DM Sans",sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:
+ radial-gradient(ellipse at 12% 8%,rgba(255,79,163,.13),transparent 33%),
+ radial-gradient(ellipse at 88% 28%,rgba(99,217,232,.09),transparent 30%),
+ radial-gradient(ellipse at 50% 100%,rgba(155,140,255,.10),transparent 38%)}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:26px 0 18px}
+.brand{display:flex;align-items:center;gap:11px;font:700 1rem "Space Grotesk",sans-serif;letter-spacing:-.03em}
+.brand-mark{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,var(--pink),var(--violet));color:#fff;font-weight:700;box-shadow:0 7px 24px #ff4fa333}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#d6d2ec;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+.eyebrow:before{content:"";width:22px;height:1px;background:var(--pink)}
+.ghost{border:1px solid var(--line);background:rgba(255,255,255,.035);color:var(--ink);border-radius:999px;padding:8px 15px;font-size:.86rem;transition:.25s}
+.ghost:hover{border-color:var(--violet);transform:translateY(-2px)}
+.hero{position:relative;padding:78px 0 76px;min-height:510px;display:flex;align-items:center}
+.hero:after{content:"";position:absolute;width:340px;height:340px;right:5%;top:8%;border-radius:50%;background:linear-gradient(135deg,rgba(255,79,163,.17),rgba(99,217,232,.12));filter:blur(2px);z-index:-1;animation:float 9s ease-in-out infinite}
+.hero-content{max-width:790px}
+h1,h2,h3,p{margin-top:0}
+h1{font:700 clamp(3rem,8vw,6.4rem)/.99 "Space Grotesk",sans-serif;letter-spacing:-.075em;margin:20px 0 24px;max-width:850px}
+.gradient-text{background:linear-gradient(100deg,#ff70b5 5%,#b7a8ff 55%,#75e5ec 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{font-size:clamp(1.05rem,2vw,1.2rem);color:var(--muted);max-width:650px;margin-bottom:30px}
+.links{display:flex;flex-wrap:wrap;gap:11px}
+.links a,.links button{display:inline-flex;align-items:center;gap:8px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:11px 18px;background:rgba(255,255,255,.04);color:var(--ink);font-weight:700;font-size:.9rem;transition:transform .25s,border-color .25s,background .25s}
+.links a:hover,.links button:hover{transform:translateY(-3px);border-color:var(--violet)}
+.links .main{background:linear-gradient(110deg,var(--pink),#9b70ff);border-color:transparent;box-shadow:0 10px 30px #ff4fa326}
+.hero-meta{display:flex;flex-wrap:wrap;gap:18px;margin-top:34px;color:var(--muted);font-size:.86rem}
+.hero-meta span{display:flex;align-items:center;gap:8px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}
+section{padding:76px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:28px}
+h2{font:700 clamp(1.9rem,4vw,2.7rem)/1.08 "Space Grotesk",sans-serif;letter-spacing:-.055em;margin-bottom:8px}
+.sub{color:var(--muted);max-width:650px;margin:0}
+.section-index{font:600 .8rem "Space Grotesk",sans-serif;color:#777b94;letter-spacing:.12em}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.stat{position:relative;overflow:hidden;padding:23px 22px;background:linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:var(--radius);transition:transform .3s,border-color .3s}
+.stat:after{content:"";position:absolute;width:90px;height:90px;right:-38px;top:-38px;border-radius:50%;background:var(--soft);transition:transform .4s}
+.stat:hover{transform:translateY(-6px);border-color:#9b8cff66}.stat:hover:after{transform:scale(1.7)}
+.stat b{display:block;font:700 clamp(1.8rem,3vw,2.35rem)/1.1 "Space Grotesk",sans-serif;letter-spacing:-.06em;margin-bottom:8px}
+.stat small{color:var(--muted);font-size:.87rem}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0 16px}
+.tabs button{border:1px solid var(--line);border-radius:999px;padding:9px 15px;background:rgba(255,255,255,.035);color:var(--muted);font-size:.87rem;font-weight:700;transition:.25s}
+.tabs button:hover{color:var(--ink);border-color:#9b8cff88}
+.tabs button[aria-selected="true"]{color:#fff;background:linear-gradient(110deg,#e8439b,#806cf4);border-color:transparent;box-shadow:0 8px 24px #9b8cff30}
+.panel{background:linear-gradient(145deg,rgba(31,35,52,.96),rgba(23,26,39,.96));border:1px solid var(--line);border-radius:26px;padding:clamp(22px,4vw,36px);min-height:310px;box-shadow:0 22px 70px #0002}
+.panel.enter{animation:panelIn .42s cubic-bezier(.2,.8,.2,1) both}
+.panel h3{font:700 1.55rem "Space Grotesk",sans-serif;margin:0 0 3px;letter-spacing:-.04em}
+.panel .meta{margin:0 0 25px;color:var(--muted);font-size:.9rem}
+.panel .meta a{text-decoration:none;color:var(--cyan)}
+.range{display:inline-flex;gap:5px;margin:0 0 22px;padding:4px;border:1px solid var(--line);border-radius:999px}
+.range button{border:0;background:transparent;color:var(--muted);padding:6px 12px;border-radius:999px;font-size:.82rem;font-weight:700}
+.range button[aria-pressed="true"]{background:#f4f3fb;color:#171522}
+.g{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:0 0 28px}
+.g div{border-left:2px solid #9b8cff66;padding-left:13px;min-width:0}
+.g b{display:block;font:700 clamp(1.45rem,3vw,2rem)/1.1 "Space Grotesk",sans-serif;letter-spacing:-.05em;margin-bottom:5px}
+.g small{color:var(--muted);font-size:.82rem}
+.bt{font-weight:700;font-size:.92rem;margin:0 0 10px}
+.bar{display:flex;height:13px;border-radius:99px;overflow:hidden;background:#303348;gap:3px}
+.bar i{display:block;height:100%;width:0;border-radius:99px;transition:width 1s cubic-bezier(.2,.8,.2,1)}
+.bar i:nth-child(1){background:linear-gradient(90deg,var(--pink),#ff8ac6)}.bar i:nth-child(2){background:linear-gradient(90deg,#806cf4,var(--violet))}.bar i:nth-child(3){background:linear-gradient(90deg,#48bdcc,var(--cyan))}
+.lg{display:flex;flex-wrap:wrap;gap:7px 22px;margin:12px 0 18px;padding:0;list-style:none;font-size:.85rem;color:var(--muted)}
+.lg i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px}
+.lg li:nth-child(1) i{background:var(--pink)}.lg li:nth-child(2) i{background:var(--violet)}.lg li:nth-child(3) i{background:var(--cyan)}
+.note{margin:0;color:#c6c5d4;max-width:75ch;font-size:.94rem}
+.cases{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.case{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:23px;transition:transform .3s,border-color .3s}
+.case:hover{transform:translateY(-5px);border-color:#ff4fa366}
+.case-no{font:700 .78rem "Space Grotesk",sans-serif;color:var(--pink);letter-spacing:.1em}
+.case h3{font:700 1.15rem/1.25 "Space Grotesk",sans-serif;margin:12px 0 5px}
+.case .case-sub{font-size:.82rem;color:var(--muted);margin-bottom:18px}
+.case p{font-size:.9rem;color:#c2c1d0;margin:0}
+.res{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 18px;padding:0;list-style:none}
+.res li{font-size:.78rem;color:var(--muted)}
+.res b{display:block;color:var(--ink);font:700 1.3rem "Space Grotesk",sans-serif}
+.case-link{display:inline-block;margin-top:15px;color:var(--cyan);font-size:.86rem;font-weight:700;text-decoration:none}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.info-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.info-card h3{font:700 1.08rem "Space Grotesk",sans-serif;margin:0 0 8px}
+.info-card p{color:var(--muted);font-size:.92rem;margin:0}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0;padding:0;list-style:none}
+.tags li{background:var(--soft);border:1px solid #9b8cff22;padding:6px 11px;border-radius:999px;font-size:.82rem;color:#d9d4f5}
+.education{margin-top:18px;padding:17px 20px;border-left:2px solid var(--cyan);background:rgba(99,217,232,.055);border-radius:0 14px 14px 0;color:var(--muted);font-size:.9rem}
+footer{padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
+footer .foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--cyan);text-decoration:none}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@keyframes float{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(-18px,20px,0) scale(1.06)}}
+@keyframes panelIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:850px){.stats{grid-template-columns:repeat(2,1fr)}.cases{grid-template-columns:1fr}.hero{min-height:450px}.g{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.wrap{width:min(100% - 32px,var(--max))}.topbar{padding-top:18px}.hero{padding:58px 0 60px;min-height:auto}.hero:after{width:220px;height:220px;right:-25%;top:10%}section{padding:55px 0}.section-head{display:block}.section-index{display:block;margin-top:13px}.stats{gap:9px}.stat{padding:17px 15px;border-radius:17px}.stat small{font-size:.78rem}.tabs{gap:7px}.tabs button{font-size:.78rem;padding:8px 11px}.panel{padding:20px 17px;border-radius:20px}.g{gap:15px 10px}.g b{font-size:1.55rem}.two{grid-template-columns:1fr}.links a,.links button{font-size:.83rem;padding:10px 14px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+.nav-links{display:flex;align-items:center;gap:20px;margin-left:auto;margin-right:22px}
+.nav-links a{font-size:.82rem;font-weight:700;color:var(--muted);text-decoration:none;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--ink)}
+.topbar{position:sticky;top:0;z-index:20;background:rgba(16,18,27,.82);backdrop-filter:blur(18px);border-bottom:1px solid transparent}
+.topbar.scrolled{border-bottom-color:var(--line)}
+.brand{text-decoration:none}
+.workflow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.workflow-step{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px;min-height:145px;overflow:hidden}
+.workflow-step:after{content:"";position:absolute;width:80px;height:80px;border-radius:50%;right:-35px;bottom:-42px;background:var(--soft)}
+.workflow-step .step{font:700 .75rem "Space Grotesk",sans-serif;letter-spacing:.12em;color:var(--pink)}
+.workflow-step h3{font:700 1.05rem "Space Grotesk",sans-serif;margin:12px 0 5px}
+.workflow-step p{font-size:.84rem;color:var(--muted);margin:0}
+.contact-panel{position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.13);border-radius:26px;padding:clamp(26px,5vw,48px);background:linear-gradient(115deg,rgba(255,79,163,.18),rgba(128,108,244,.18) 55%,rgba(99,217,232,.12))}
+.contact-panel:after{content:"";position:absolute;width:230px;height:230px;right:-65px;top:-105px;border-radius:50%;border:1px solid rgba(255,255,255,.13);box-shadow:0 0 0 28px rgba(255,255,255,.025),0 0 0 58px rgba(255,255,255,.02)}
+.contact-panel h2{max-width:680px;font-size:clamp(2rem,5vw,3.5rem)}
+.contact-panel p{color:var(--muted);max-width:570px}
+.contact-panel .links{position:relative;z-index:1}
+@media(max-width:850px){.nav-links{gap:12px;margin-right:12px}.nav-links a{font-size:.75rem}.workflow{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.topbar{flex-wrap:wrap;gap:12px}.nav-links{order:3;width:100%;overflow-x:auto;margin:0;padding:3px 0 8px;gap:19px}.nav-links a{white-space:nowrap}.workflow{grid-template-columns:1fr 1fr}.workflow-step{padding:16px;min-height:135px}}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="topbar" aria-label="Main navigation">
+    <a class="brand" href="#home" aria-label="Saahiti Hota, home"><span class="brand-mark">S</span> SAAHITI HOTA</a>
+    <div class="nav-links" aria-label="Portfolio sections">
+      <a href="#analytics">Analytics</a><a href="#approach">Approach</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </div>
+    <button class="ghost" id="theme" type="button" aria-label="Switch colour theme">Switch to light</button>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <span class="eyebrow">Creator · Strategist · Analyst</span>
+      <h1>I turn short-form content into <span class="gradient-text">audience growth.</span></h1>
+      <p class="lede">I’m an IT graduate from Hyderabad who has spent four years building and managing fan-content channels across YouTube and Instagram — independently handling content discovery, editing, publishing and performance analysis.</p>
+      <div class="links">
+        <a class="main" href="mailto:saahiti.hota@gmail.com">Let’s work together ↗</a>
+        <button type="button" id="copy">Copy email</button>
+        <a href="https://www.youtube.com/@bangchanbg" target="_blank" rel="noopener">View YouTube ↗</a>
+        <a href="https://www.instagram.com/bangchanbbg" target="_blank" rel="noopener">View Instagram ↗</a>
+        <a href="https://github.com/Saahitii" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <div class="hero-meta"><span><i class="dot"></i> Open to digital marketing & content roles</span><span>Hyderabad, India</span></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="reveal" id="analytics" aria-labelledby="nums">
+      <div class="section-head"><div><span class="eyebrow">01 / Snapshot</span><h2 id="nums">Growth, in numbers.</h2><p class="sub">Platform performance from YouTube Studio and Instagram Insights, as of 2 November 2026.</p></div><span class="section-index">THE BIG PICTURE</span></div>
+      <div class="stats">
+        <div class="stat"><b>30,659</b><small>YouTube subscribers · main channel</small></div>
+        <div class="stat"><b>1.9M</b><small>YouTube views · last 28 days</small></div>
+        <div class="stat"><b>16,182</b><small>Instagram followers · main account</small></div>
+        <div class="stat"><b>1.02M</b><small>Instagram views · last 90 days</small></div>
+      </div>
+    </section>
+
+    <section class="reveal" aria-labelledby="ex">
+      <div class="section-head"><div><span class="eyebrow">02 / Platform analytics</span><h2 id="ex">Explore the portfolio.</h2><p class="sub">Select an account to inspect its performance, audience mix and growth signals.</p></div><span class="section-index">INTERACTIVE DATA</span></div>
+      <div class="tabs" role="tablist" aria-label="Social media accounts" id="tabs"></div>
+      <div class="panel" id="panel" role="tabpanel" aria-live="polite"></div>
+    </section>
+
+
+    <section class="reveal" id="approach" aria-labelledby="approach-title">
+      <div class="section-head"><div><span class="eyebrow">03 / Working method</span><h2 id="approach-title">A repeatable content cycle.</h2><p class="sub">From finding a promising idea to learning from its performance — a hands-on workflow across the platforms I manage.</p></div><span class="section-index">HOW I EXECUTE</span></div>
+      <div class="workflow">
+        <article class="workflow-step"><span class="step">STEP 01</span><h3>Research</h3><p>Discover content, study audience signals and identify promising formats.</p></article>
+        <article class="workflow-step"><span class="step">STEP 02</span><h3>Create</h3><p>Select clips, edit for the platform, and prepare captions and packaging.</p></article>
+        <article class="workflow-step"><span class="step">STEP 03</span><h3>Publish</h3><p>Publish consistently with a format and presentation suited to each platform.</p></article>
+        <article class="workflow-step"><span class="step">STEP 04</span><h3>Optimise</h3><p>Review reach, retention and audience response to inform the next cycle.</p></article>
+      </div>
+    </section>
+
+    <section class="reveal" id="work" aria-labelledby="cases">
+      <div class="section-head"><div><span class="eyebrow">04 / Selected work</span><h2 id="cases">Proof of execution.</h2><p class="sub">A closer look at the decisions, outcomes and lessons behind the metrics.</p></div><span class="section-index">CASE STUDIES</span></div>
+      <div class="cases">
+        <article class="case">
+          <span class="case-no">CASE 01 · YOUTUBE</span><h3>Reach beyond the existing audience</h3><p class="case-sub">Main YouTube channel</p>
+          <ul class="res"><li><b>842.1K</b>Best video views</li><li><b>353.2K</b>Monthly audience</li><li><b>+2.9K</b>Subscribers / 28 days</li><li><b>64.9%</b>New viewers</li></ul>
+          <p>Shorts recommendations drive discovery. I identify videos that attract new viewers, study the patterns behind them and build the next publishing decisions around those signals. I manage the workflow end to end.</p>
+        </article>
+        <article class="case">
+          <span class="case-no">CASE 02 · INSTAGRAM</span><h3>Turn Reels reach into audience growth</h3><p class="case-sub">Main Instagram account</p>
+          <ul class="res"><li><b>367.8K</b>Views / 30 days</li><li><b>68.3%</b>Non-followers</li><li><b>+2,696</b>Followers / 90 days</li><li><b>234K</b>Interactions / 90 days</li></ul>
+          <p>Reels account for most views, with the majority coming from non-followers. I use Insights to identify which posts convert attention into follows and apply those learnings to future content.</p>
+        </article>
+        <article class="case">
+          <span class="case-no">CASE 03 · AFFILIATE</span><h3>Connect content with measurable action</h3><p class="case-sub">Affiliate programme</p>
+          <ul class="res"><li><b>10,083</b>Referrals this year</li><li><b>106</b>Orders</li><li><b>1.05%</b>Conversion rate</li><li><b>411</b>Items sold · all time</li></ul>
+          <p>I promote a merchandise store using a referral link and a 10% coupon code. Figures cover 1 January to 3 November 2026. Earnings are not disclosed.</p>
+          <a class="case-link" href="https://ttaesthetic.com/?ref=bangchanbg" target="_blank" rel="noopener">Visit affiliate store ↗ · Code: Bangchanbg</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="reveal" aria-labelledby="learn">
+      <div class="section-head"><div><span class="eyebrow">05 / Perspective</span><h2 id="learn">What the data taught me.</h2><p class="sub">Growth is useful only when it creates a sustainable audience and a repeatable process.</p></div><span class="section-index">LEARNINGS</span></div>
+      <div class="two">
+        <article class="info-card"><h3>Reach is not the same as monetisation</h3><p>My main YouTube channel previously earned ad revenue, but monetisation was removed under YouTube’s reused-content policy. Reach alone does not protect income. Original contribution — commentary, editing and context — needs to be part of the content strategy from the start.</p></article>
+        <article class="info-card"><h3>Views are not the same as retention</h3><p>My second Instagram account lost followers despite 52.2K views in 30 days, while my third YouTube channel had few regular viewers. I now look beyond reach and pay closer attention to returning viewers and follower conversion.</p></article>
+      </div>
+    </section>
+
+    <section class="reveal" id="skills" aria-labelledby="how">
+      <div class="section-head"><div><span class="eyebrow">06 / Capabilities</span><h2 id="how">Creative execution. Technical thinking.</h2><p class="sub">A mix of hands-on content production, platform analytics and an engineering foundation.</p></div><span class="section-index">TOOLKIT & BACKGROUND</span></div>
+      <div class="two">
+        <article class="info-card"><h3>Content & growth tools</h3><ul class="tags"><li>VN Editor</li><li>CapCut</li><li>InShot</li><li>Canva</li><li>YouTube Studio</li><li>Instagram Insights</li><li>Affiliate dashboards</li></ul></article>
+        <article class="info-card"><h3>Technical toolkit</h3><ul class="tags"><li>Python</li><li>JavaScript</li><li>SQL</li><li>React</li><li>Node.js</li><li>MongoDB</li><li>Git</li><li>AWS Academy</li></ul></article>
+        <article class="info-card"><h3>Intelligent medical assistant</h3><p>Full-stack health application with an AI chatbot, built using React, Node.js, MongoDB and the OpenAI API.</p></article>
+        <article class="info-card"><h3>AI bank locker security system</h3><p>Face recognition with two-factor authentication, developed using Python and Flask, with 98.3% real-time identification accuracy.</p></article>
+      </div>
+      <div class="education"><strong style="color:var(--ink)">Education</strong> · B.Tech, Information Technology — Gokaraju Rangaraju Institute of Engineering and Technology, Hyderabad (2022–2026) · CGPA 8.09</div>
+    </section>
+
+    <section class="reveal" id="contact" aria-labelledby="contact-title">
+      <div class="contact-panel">
+        <span class="eyebrow">Let’s connect</span>
+        <h2 id="contact-title">Have a content challenge? Let’s make it grow.</h2>
+        <p>I’m open to opportunities in digital marketing, social media management, content strategy and creator partnerships.</p>
+        <div class="links">
+          <a class="main" href="mailto:saahiti.hota@gmail.com">Email Saahiti ↗</a>
+          <a href="https://www.youtube.com/@bangchanbg" target="_blank" rel="noopener">Explore my YouTube ↗</a>
+          <a href="https://www.instagram.com/bangchanbbg" target="_blank" rel="noopener">Explore my Instagram ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="foot"><span>© 2026 Saahiti Hota · Hyderabad, India</span><span>Open to digital marketing, social media and content roles · <a href="mailto:saahiti.hota@gmail.com">saahiti.hota@gmail.com</a></span></div></footer>
+</div>
+<script>
+const accounts=[
+ {n:"YouTube · Main",t:"Main YouTube channel",u:"https://www.youtube.com/@bangchanbg",h:"@bangchanbg",
+  s:[["30,659","Subscribers"],["1.9M","Views · last 28 days"],["842.1K","Best video"],["353.2K","Monthly audience"]],
+  b:{t:"Audience composition",g:[["New viewers",64.9],["Casual viewers",25.4],["Regular viewers",9.7]]},
+  x:"Most viewers are new, which indicates that Shorts are doing the discovery work."},
+ {n:"YouTube · 02",t:"Second YouTube channel",u:"https://www.youtube.com/@bangchanbg2",h:"@bangchanbg2",
+  s:[["4,899","Subscribers"],["147.9K","Views · last 28 days"],["38.9K","Best video"],["24","Shorts published"]],
+  b:{t:"Views by format · 28 days",g:[["Shorts · 147.0K",147000],["Posts · 755",755],["Videos · 75",75]]},
+  x:"Almost all views come from Shorts. Views were 89K below this channel’s usual level last month."},
+ {n:"YouTube · 03",t:"Third YouTube channel",u:"https://www.youtube.com/@scoupsxhannie",h:"@scoupsxhannie",
+  s:[["1,010","Subscribers"],["88.5K","Views · last 28 days"],["28.5K","Best video"],["32.0K","Monthly audience"]],
+  b:{t:"Audience composition",g:[["New viewers",84.0],["Casual viewers",14.4],["Regular viewers",1.6]]},
+  x:"Discovery is strong, but very few viewers return. The focus is on giving people a reason to come back."},
+ {n:"Instagram · Main",t:"Main Instagram account",u:"https://www.instagram.com/bangchanbbg",h:"@bangchanbbg",ig:true,
+  r:{30:{s:[["16,182","Followers"],["367.8K","Views"],["+690","Net followers"],["72.9K","Interactions"]],g:[["Followers",31.7],["Non-followers",68.3]]},
+     90:{s:[["16,182","Followers"],["1.02M","Views"],["+2,696","Net followers"],["234.5K","Interactions"]],g:[["Followers",28.6],["Non-followers",71.4]]}},
+  x:"Reels carry the account, and most views come from people who do not follow yet."},
+ {n:"Instagram · 02",t:"Second Instagram account",u:"https://www.instagram.com/scoupsxhannie",h:"@scoupsxhannie",ig:true,
+  r:{30:{s:[["5,122","Followers"],["52.2K","Views"],["-65","Net followers"],["5.7K","Interactions"]],g:[["Followers",14.2],["Non-followers",85.8]]},
+     90:{s:[["5,122","Followers"],["142.9K","Views"],["-167","Net followers"],["13.5K","Interactions"]],g:[["Followers",10.1],["Non-followers",89.9]]}},
+  x:"Views reach new people, but followers are declining. This account demonstrates that reach and retention are different problems."}
+];
+let current=0,range=30;
+const tabs=document.getElementById("tabs"),panel=document.getElementById("panel");
+const escapeHTML=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function render(){
+ const a=accounts[current],d=a.ig?a.r[range]:a,groups=a.ig?d.g:a.b.g;
+ const total=groups.reduce((sum,x)=>sum+x[1],0);
+ let markup=`<h3>${escapeHTML(a.t)}</h3><p class="meta"><a href="${a.u}" target="_blank" rel="noopener">${escapeHTML(a.h)} ↗</a></p>`;
+ if(a.ig)markup+=`<div class="range" role="group" aria-label="Instagram reporting period"><button type="button" data-range="30" aria-pressed="${range===30}">30 days</button><button type="button" data-range="90" aria-pressed="${range===90}">90 days</button></div>`;
+ markup+='<div class="g">';
+ (a.ig?d.s:a.s).forEach(x=>markup+=`<div><b>${escapeHTML(x[0])}</b><small>${escapeHTML(x[1])}</small></div>`);
+ markup+=`</div><p class="bt">${escapeHTML(a.ig?`Where views come from · ${range} days`:a.b.t)}</p><div class="bar" aria-label="Audience or view distribution">`;
+ groups.forEach(x=>markup+=`<i data-width="${(x[1]/total*100).toFixed(2)}"></i>`);
+ markup+='</div><ul class="lg">';
+ groups.forEach(x=>markup+=`<li><i></i>${escapeHTML(x[0])}${a.ig||x[1]<100?' '+x[1]+'%':''}</li>`);
+ markup+=`</ul><p class="note">${escapeHTML(a.x)}</p>`;
+ panel.classList.remove("enter");panel.innerHTML=markup;void panel.offsetWidth;panel.classList.add("enter");
+ panel.setAttribute("aria-labelledby","tab"+current);
+ panel.querySelectorAll(".bar i").forEach(el=>requestAnimationFrame(()=>el.style.width=el.dataset.width+"%"));
+ panel.querySelectorAll("[data-range]").forEach(btn=>btn.addEventListener("click",()=>{range=Number(btn.dataset.range);render()}));
+}
+function selectAccount(i){current=i;[...tabs.children].forEach((b,j)=>{b.setAttribute("aria-selected",String(j===i));b.tabIndex=j===i?0:-1});render()}
+accounts.forEach((a,i)=>{const b=document.createElement("button");b.type="button";b.id="tab"+i;b.setAttribute("role","tab");b.setAttribute("aria-selected",String(i===0));b.tabIndex=i===0?0:-1;b.textContent=a.n;b.addEventListener("click",()=>selectAccount(i));b.addEventListener("keydown",e=>{if(e.key==="ArrowRight"||e.key==="ArrowLeft"){e.preventDefault();const next=(i+(e.key==="ArrowRight"?1:-1)+accounts.length)%accounts.length;selectAccount(next);tabs.children[next].focus()}});tabs.appendChild(b)});
+render();
+
+document.getElementById("copy").addEventListener("click",async function(){
+ const original="Copy email";try{await navigator.clipboard.writeText("saahiti.hota@gmail.com");this.textContent="Email copied";}catch(e){this.textContent="saahiti.hota@gmail.com";}
+ setTimeout(()=>this.textContent=original,1800);
+});
+const themeButton=document.getElementById("theme");
+const lightVars={"--bg":"#f5f4fa","--surface":"#ffffff","--surface-2":"#f0eef8","--ink":"#1c1a2a","--muted":"#68677a","--line":"rgba(24,22,42,.12)","--soft":"rgba(130,105,220,.12)"};
+let light=false;
+themeButton.addEventListener("click",()=>{light=!light;Object.entries(lightVars).forEach(([k,v])=>document.documentElement.style.setProperty(k,light?v:""));document.documentElement.style.colorScheme=light?"light":"dark";themeButton.textContent=light?"Switch to dark":"Switch to light";});
+
+
+const nav=document.querySelector(".topbar");
+const navLinks=[...document.querySelectorAll(".nav-links a")];
+window.addEventListener("scroll",()=>nav.classList.toggle("scrolled",window.scrollY>12),{passive:true});
+if("IntersectionObserver" in window){
+ const sectionObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
+   if(entry.isIntersecting)navLinks.forEach(link=>link.classList.toggle("active",link.getAttribute("href")==="#"+entry.target.id));
+ }),{rootMargin:"-25% 0px -65% 0px"});
+ ["analytics","work","approach","skills","contact"].forEach(id=>{const el=document.getElementById(id);if(el)sectionObserver.observe(el)});
+}
+
+// Reveal sections as they enter the viewport; reduced-motion users see all content immediately.
+const revealItems=document.querySelectorAll(".reveal");
+if("IntersectionObserver" in window&&!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+ const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target)}}),{threshold:.12});
+ revealItems.forEach(el=>observer.observe(el));
+}else revealItems.forEach(el=>el.classList.add("visible"));
+</script>
+</body>
+</html>
